@@ -11,12 +11,16 @@ for i in range(1,3):
 	for j in llist:
 		for k in j.find_all('h4'):
 			k=k.text
+			print(k)
 		for l in j.find_all('div',{'class':'music-singer'}):
 			l=l.text
+			print(l)
 		for o in j.find_all('div',{'class':'music-genre'}):
 			o=o.text
+			print(o)
 		for m in j.find_all('div',{'class':'music-album'}):
 			m=m.text
+			print(m)
 		for f in j.find_all('div',{'class':'user-rating'}):
 			f=f.text
 			c=c+1
